@@ -1,0 +1,15 @@
+@import '../../colors.module.scss';
+
+.bar {
+  width: 100%;
+  height: 50px;
+  border-radius:10px;
+  overflow: hidden;
+  background-color: lighten($base, 40%);
+
+  div {
+    transition: width .6s;
+    height: 100%;
+    background-color: $base;
+  }
+}
