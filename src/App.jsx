@@ -1,13 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import ChildComponent from "./components/ChildComponent";
+import UserProvider from "./context/UserContext";
 
 const App = () => {
+  // const userContext = {
+  //   users: ["matt", "charlie"],
+  //   sayHello: () => {console.log("Hello");}
+  // }
   return (
-    <main>
-      <h1>React Sandboxes</h1>
-      <p>a collection of the react sandboxes</p>
-    </main>
+    <div className="App">
+      <h1>Context</h1>
+      {/* <UserContext.Provider value={userContext}>
+        <ChildComponent />
+      </UserContext.Provider> */}
+      <UserProvider>
+        <ChildComponent />
+      </UserProvider>
+    </div>
   );
-}
+};
 
 export default App;
