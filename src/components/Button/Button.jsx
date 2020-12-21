@@ -1,21 +1,25 @@
 import React from "react";
 import styles from "./Button.module.scss";
 
-const Button = ({ text, buttonType, borderButton, clicked }) => {
+const Button = (props) => {
+  // NEW PROP CLICKED = FUNCTION TO HAPPEN WHEN CLICKED
+  const { text, buttonType, borderButton, clicked } = props;
+
+  // Avaible styles = button, primary, secondary, borderButton
+  // Array of styles button class is default
   const buttonStyle = [styles.button];
+
+  // Conditionally adding classes based on props
+  // Either the primary, secondary class
   if (buttonType) buttonStyle.push(styles[buttonType]);
+
+  // Adding border button class based on BOOLEAN prop
   if (borderButton) buttonStyle.push(styles.borderButton);
 
-  const logHandler = () => console.log("This is the Button!");
-  
-  const clickHandler = () => alert("This is the Button!");
-
-  const mouseOverHandler = (event) => {
-    event.target.style.color = "white";
-  };
-  
+  // ADD CLICKED PROP TO ON CLICK
   return (
     <button onClick={clicked} className={buttonStyle.join(" ")}>
+      {/* Will display text prop if given or by default will display submit */}
       {text || "submit"}
     </button>
   );

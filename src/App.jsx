@@ -1,13 +1,18 @@
 import React from "react";
 import styles from "./App.module.scss";
 
+// COMPONENTS
 import Progress from "./containers/Progress";
 import Button from "./components/Button";
 
 const App = () => {
+  // LOG FUNCTION SHOWING THIS IS IN THE APP
   const logHandler = () => console.log("This is the app!");
+  // ALERT FUNCTION EMPHASIZING THIS IS HAPPENING IN THE APP
   const alertHandler = () => alert("This is the app!");
-  const colorHandler = (event) => (event.target.style.color = "white");
+  // PLAYING WITH THE EVENT OBJECT
+  const colorHandler = (event) => {event.target.style.color = "white"};
+
   return (
     <>
       <main className={styles.App}>

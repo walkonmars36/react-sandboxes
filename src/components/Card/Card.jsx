@@ -1,26 +1,24 @@
 import React from "react";
 import styles from "./Card.module.scss";
 
+// COMPONENTS
 import ProgressDisplay from "../ProgressDisplay";
 import ProgressBar from "../ProgressBar";
 import ProgressInput from "../ProgressInput";
-
 import Button from "../Button";
 
-const Card = ({ handlers, count, cardType, progress }) => {
-  const cardStyles = [styles.card];
-  if (cardType) {
-    cardStyles.push(styles[cardType]);
-  }
+const Card = (props) => {
+  // ALL OF THE PROPS BY THE END
+  const { incrementHandler, decrementHandler, progressByHandler, count, progressBy } = props;
 
   return (
-    <article className={cardStyles.join(" ")}>
+    <article className={styles.card}>
       <ProgressDisplay count={count} />
       <ProgressBar width={count} />
       <div className={styles.buttonController}>
-        <Button text="-" clicked={handlers.decrementHandler} borderButton="true" buttonType="secondary" />
-        <ProgressInput count={progress} changed={handlers.progressionHandler} />
-        <Button text="+" clicked={handlers.incrementHandler} borderButton={true} />
+        <Button text="-" clicked={decrementHandler} borderButton="true" buttonType="secondary" />
+        <ProgressInput progressBy={progressBy} changed={progressByHandler} />
+        <Button text="+" clicked={incrementHandler} borderButton={true} />
       </div>
     </article>
   );
