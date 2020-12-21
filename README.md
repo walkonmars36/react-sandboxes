@@ -14,8 +14,13 @@ This is a collection of small and large sandboxes covering React content. Larger
 - props-start
 - props-finished
 - state
-- functions-as-props
+- functions-as-props-start
+- function-as-props-finished
 - data-request-use-effect
 - testing
+
+### Current Branch main
+Not much on here, go check out a different branch :\) 
+
 
 
