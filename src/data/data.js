@@ -1,4 +1,4 @@
-const people = [
+const data = [
   {
     name: "Bill Murray",
     imageUrl: "http://www.fillmurray.com/300/200",
@@ -22,4 +22,4 @@ const people = [
   }
 ];
 
-export default people;
+export default data;
