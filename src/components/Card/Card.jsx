@@ -3,32 +3,23 @@ import styles from "./Card.module.scss";
 
 import Button from "../Button/Button";
 
+// BASIC CARD STYLES IN SCSS
+// card,primary,secondary
 const Card = (props) => {
-  // console.log(props)
-
-  // left hand side variables you are unpacking
-  // right hand side is the source
-  const { name, imageUrl, description, type } = props.data;
-
-  const cardStyles = [styles.card];
-  if (type === "primary") {
-    cardStyles.push(styles.primary);
-  }
-  if (type === "secondary") {
-    cardStyles.push(styles.secondary);
-  }
-
+  // Challenge
+  // Can you Populate this card with the props passed into it?
+  // Can you Condtionally render this card's styles based on a certain prop?
+  // Can you pass props into the button component so it matches the card and has border styles?
   return (
-    <article className={cardStyles.join(" ")}>
+    <article className={styles.card}>
       <div>
-        <img src={imageUrl} alt="Bill Murray" />
+        <img src={"We need a image url"} alt="Alternative text here" />
       </div>
-      <h2>{name}</h2>
-      <p>{description}</p>
-      <Button borderButton={true} type={type} />
+      <h2>{"A name would be good"}</h2>
+      <p>{"description please"}</p>
+      <Button />
     </article>
   );
 };
 
 export default Card;
-
