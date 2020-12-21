@@ -28,6 +28,7 @@ This is the starting point for the sandbox codealong. Set up for 3 button and ca
 - Add 3 Button components.
 - Play around with text props and type props.
 - Show them Object destructuring.
+- Add 3 Card components
 - Pass the card the first object from the data file
 - Challenge them
 - Wrap it up
