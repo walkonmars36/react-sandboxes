@@ -17,6 +17,7 @@ const App = () => {
     <>
       <main className={styles.App}>
         <h1>Functions as Props</h1>
+        {/* ADD 3 BUTTONS HERE */}
         <Button text="log" clicked={logHandler} />
         <Button buttonType="primary" text="alert" clicked={alertHandler} />
         <Button buttonType="secondary" text="color" clicked={colorHandler} />
