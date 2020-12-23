@@ -28,7 +28,7 @@ It is a big codealong so you can get the guys to clone the repo and start on the
 
 Its functions as props so it has been split up to make it easier to teach.
 
-### Intro Functions as Props
+### Functions as Props
 
 The goal is to demonstrate how moving logic into container makes components reusable.
 
@@ -38,7 +38,7 @@ You will create three functions and pass them into 3 of the same Button componen
 
 The goal is to show how you can connect components to state that lives in the parent container. To pass functions that interact with state to the child components.
 
-You are going to create a counter, two components display the count. 2 buttons are going to increment and decrement it. The third is going to take a input and that will be the value to either increment and decrement it by.
+You are going to create a counter, two components that display the count. 2 buttons are going to increment and decrement it. There will be an input and that will be the value to either increment and decrement the count by.
 
 #### Optional Steps
 
