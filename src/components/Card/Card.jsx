@@ -7,10 +7,11 @@ import ProgressBar from "../ProgressBar";
 import ProgressInput from "../ProgressInput";
 import Button from "../Button";
 
+// PRESENTATIONAL COMPONENT
 const Card = (props) => {
   // ALL OF THE PROPS BY THE END
   const { incrementHandler, decrementHandler, progressByHandler, count, progressBy } = props;
-
+ 
   return (
     <article className={styles.card}>
       <ProgressDisplay count={count} />

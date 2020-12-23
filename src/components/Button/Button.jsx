@@ -1,16 +1,18 @@
 import React from "react";
 import styles from "./Button.module.scss";
 
+
+// PRESENTATIONAL COMPONENT
 const Button = (props) => {
   // NEW PROP CLICKED = FUNCTION TO HAPPEN WHEN CLICKED
   const { text, buttonType, borderButton, clicked } = props;
 
   // Avaible styles = button, primary, secondary, borderButton
-  // Array of styles button class is default
+  // button class is default
   const buttonStyle = [styles.button];
 
-  // Conditionally adding classes based on props
-  // Either the primary, secondary class
+  // Conditionally adding classes based on props.
+  // primary OR secondary 
   if (buttonType) buttonStyle.push(styles[buttonType]);
 
   // Adding border button class based on BOOLEAN prop
