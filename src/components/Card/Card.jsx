@@ -9,17 +9,14 @@ import Button from "../Button";
 
 // PRESENTATIONAL COMPONENT
 const Card = (props) => {
-  // ALL OF THE PROPS BY THE END
-  const { incrementHandler, decrementHandler, progressByHandler, count, progressBy } = props;
- 
   return (
     <article className={styles.card}>
-      <ProgressDisplay count={count} />
-      <ProgressBar width={count} />
+      <ProgressDisplay />
+      <ProgressBar />
       <div className={styles.buttonController}>
-        <Button text="-" clicked={decrementHandler} borderButton="true" buttonType="secondary" />
-        <ProgressInput progressBy={progressBy} changed={progressByHandler} />
-        <Button text="+" clicked={incrementHandler} borderButton={true} />
+        <Button text="-" borderButton={true} buttonType="secondary" />
+        <ProgressInput />
+        <Button text="+" borderButton={true} />
       </div>
     </article>
   );

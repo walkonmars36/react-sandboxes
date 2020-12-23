@@ -20,9 +20,9 @@ This is a collection of small and large sandboxes covering React content. Larger
 - data-request-use-effect
 - testing
 
-### Current Branch function-as-props-finished
+### Current Branch function-as-props-start
 
-This is the finishing point for the sandbox codealong.
+This is the start point for the sandbox codealong.
 
 It is a big codealong so you can get the guys to clone the repo and start on the functions-as-props-start to save styling and the layout of all the components.
 
@@ -42,7 +42,7 @@ You are going to create a counter, two components display the count. 2 buttons a
 
 #### Optional Steps
 
-Functions as Props
+##### Functions as Props
 
 - Intro to the Button component
 - Add three Button Components into the app.
@@ -52,7 +52,7 @@ Functions as Props
 - Second Button -> Create an alert function in container -> Pass ref to the Button.
 - Third Button -> Create a function that uses the EVENT -> Pass ref to the Button.
 
-Functions as Props + State
+##### Functions as Props + State
 
 - Intro to the container and components
 - container = Progress
@@ -71,3 +71,4 @@ Functions as Props + State
 -> Pass it to the progressInput component
 - Show them anoymous function to pass event
 - Update increment, decrement functions to - or + progressBy
+
