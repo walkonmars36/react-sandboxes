@@ -6,8 +6,8 @@ This is a collection of small and large sandboxes covering React content. Larger
 
 - Clone the repo
 - Navigate to you choosen branch
-- Run "yarn install" in your CLI to add dependancies
-- Run "yarn start" to launch Live server
+- Run "npm install" in your CLI to add dependancies
+- Run "npm start" to launch Live server
 
 ## Available Branches
 
