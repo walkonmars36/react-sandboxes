@@ -3,9 +3,9 @@ import './App.css';
 
 const App = () => {
   return (
-    <main>
+    <main class="App">
       <h1>React Sandboxes</h1>
-      <p>a collection of the react sandboxes</p>
+      <p>A collection of React sandboxes. Each branch has a different topic on it.</p>
     </main>
   );
 }
