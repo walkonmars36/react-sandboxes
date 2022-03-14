@@ -1,16 +1,31 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 
 import Card from "../../components/Card";
 
 // CONTAINER HOLDING ALL THE BUSINESS LOGIC
 
 const Progress = () => {
+  const [progression, setProgression] = useState(0);
+  const [progressBy, setProgressBy] = useState(10);
 
+  const incrementHandler = () => {
+    const incremented = progression + progressBy;
+    setProgression(incremented);
+  };
+
+  const decrementHandler = () => {
+    const decremented = progression - progressBy;
+    setProgression(decremented);
+  };
+
+  const progressByHandler = (event) => {
+    const newValue = parseInt(event.target.value);
+    setProgressBy(newValue);
+  };
 
   return (
     <>
-      <Card
-      />
+      <Card decrementHandler={decrementHandler} incrementHandler={incrementHandler} count={progression} progressBy={progressBy} progressByHandler={progressByHandler} />
     </>
   );
 };

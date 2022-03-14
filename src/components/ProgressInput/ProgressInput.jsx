@@ -6,9 +6,18 @@ import styles from "./ProgressInput.module.scss";
 // This makes it reflect the new value when it changes
 // Changed is a function as a prop that passes the event into it when the value of the input changes
 const ProgressInput = (props) => {
+  const {progressBy, handleChange} = props;
+
   return (
     <>
-      <input className={styles.input} type="number" />
+      <input
+        className={styles.input}
+        type="number"
+        value={progressBy}
+        onChange={(event) => {
+          handleChange(event);
+        }}
+      />
     </>
   );
 };
