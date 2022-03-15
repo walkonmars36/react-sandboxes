@@ -9,7 +9,7 @@ import Button from "../Button";
 
 // PRESENTATIONAL COMPONENT
 const Card = (props) => {
-  const {decrementHandler, incrementHandler, count, progressBy, progressByhandler} = props;
+  const {decrementHandler, incrementHandler, count, progressBy, progressByHandler} = props;
 
   return (
     <article className={styles.card}>
@@ -17,7 +17,7 @@ const Card = (props) => {
       <ProgressBar width={count} />
       <div className={styles.buttonController}>
         <Button text="-" borderButton={true} buttonType="secondary" clicked={decrementHandler} />
-        <ProgressInput progressBy={progressBy} changed={progressByhandler} />
+        <ProgressInput progressBy={progressBy} handleChange={progressByHandler} />
         <Button text="+" borderButton={true} clicked={incrementHandler} />
       </div>
     </article>
